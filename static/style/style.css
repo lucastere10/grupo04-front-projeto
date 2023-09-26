@@ -4,7 +4,7 @@ html, body {
 
 .card {
     opacity: 100%;
-    z-index: 9999; /* Insira o valor que desejar */
+    z-index: 1; /* Insira o valor que desejar */
 }
 
 .cascading-right {
@@ -15,7 +15,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .container {
