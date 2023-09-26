@@ -9,12 +9,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style/style.css">  <!-- PERSONALIZAÇÃO STYLE.CSS -->
     <!-- Modificar FavCon -->
-    <link rel="icon" type="image/x-icon" href="/static/style/imagens/marvel.svg">
+    <link rel="icon" type="image/x-icon" href="/static/style/imagens/dclogo.svg">
     <title>MundoMARVEL</title>
 </head>
 <body>
-    
+
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+            </div>
+            <div class="navbar-pesquisa">
+                <form onsubmit="" class="form-pesquisa">
+                    <input type="text" class="form-input" placeholder="Escolha seu super herói ..." name = "pesquisa">
+                    <button type="submit" class = "btn-pesquisar">
+                        Submit
+                    </button>
+                    <div class="lista-pesquisa" id = "lista-pesquisa">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="heroi-card">
+            <div class="div-heroi-img">
+                <img class="heroi-img" src="" alt="">
+            </div>
+            <div class="heroi-info">
+                <h3 class="heroi-nome"></h3>
+                <h5 class="heroi-nome-real"></h5>
+                <div class="div-powerstats">
+                    <h3>PowerStats</h3>
+                    <div class="powerstats-card">
+                        <div class="card-poder">
+                            <p class="poder-valor"></p>
+                        </div>
+                        <div class="card-velocidade">
+                            <p class="velocidade-valor"></p>
+                        </div>
+                        <div class="card-combate">
+                            <p class="combate-valor"></p>
+                        </div>
+                        <div class="card-inteligencia">
+                            <p class="inteligencia-valor"></p>
+                        </div>
+                        <div class="card-forca">
+                            <p class="forca-valor"></p>
+                        </div>
+                        <div class="card-durabilidade">
+                            <p class="durabilidade-valor"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    <footer></footer>
 
     <script src="/static/scripts/script.js" ></script>
+    <script src="/static/scripts/auth.js" ></script>
 </body>
 </html>
