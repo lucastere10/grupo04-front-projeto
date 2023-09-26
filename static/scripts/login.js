@@ -51,6 +51,7 @@ function logarUsuario(){
     // caso verdadeiro levar para a paginha index
     if (usuario == data.usuario && senha == data.senha) {
         alert('Login realizado com Sucesso!');
+        sessionStorage.setItem("AuthenticationState", "Authenticated");
         window.location.href = "index.html"
     } else {
         alert("Usuário ou senha incorretos");

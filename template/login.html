@@ -17,19 +17,7 @@
     <header></header>
     <main>
         <!-- Section: Design Block -->
-        <section class="text-center text-lg-start">
-            <style>
-                .cascading-right {
-                    margin-right: -50px;
-                }
-
-                @media (max-width: 991.98px) {
-                    .cascading-right {
-                        margin-right: 0;
-                    }
-                }
-            </style>
-
+        <section class="login-section text-center text-lg-start">
             <!-- Jumbotron -->
             <div class="container py-4">
                 <div class="row g-0 align-items-center">
@@ -40,22 +28,22 @@
                             ">
                             <div class="card-body p-5 shadow-5 text-center">
 
-                                <h2 class="fw-bold mb-5">Entrar</h2>
+                                <h2 class="fw-bold mb-5">Entre no <strong>MundoMARVEL</strong></h2>
                                 <form onsubmit="logarUsuario()">
 
                                     <!-- 2 column grid layout with text inputs for the first and last names -->
                                     <div class="row">
                                         <div class="col-md-12 mb-4">
                                             <div class="form-outline">
-                                                <input type="text" id="usuario-input-login" class="form-control" />
+                                                <input type="text" id="usuario-input-login" class="form-control" required/>
                                                 <label class="usuario-label" for="usuario-input-login">Usuário</label>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Password input -->
+                                    <!-- Senha input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="senha-input-login" class="form-control" />
+                                        <input type="password" id="senha-input-login" class="form-control" required/>
                                         <label class="form-label" for="senha-input-login">Password</label>
                                     </div>
 
@@ -63,6 +51,12 @@
                                     <button type="submit" class="btn btn-primary btn-block mb-4">
                                         Login
                                     </button>
+                                     <!-- Registrar buttons -->
+                                    <div class="text-center">
+                                        <p>Não tem uma conta? 
+                                            <a href="cadastro.html">Registre-se!</a>
+                                        </p>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -74,9 +68,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Jumbotron -->
         </section>
-        <!-- Section: Design Block -->
     </main>
     <footer></footer>
 
