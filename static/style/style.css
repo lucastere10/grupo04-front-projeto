@@ -1,4 +1,32 @@
-.card-body {
+html, body {
+    font-family: "Poppins", sans-serif;
+  }
+
+.card {
     opacity: 100%;
     z-index: 9999; /* Insira o valor que desejar */
+}
+
+.cascading-right {
+    margin-right: -50px;
+}
+
+.login-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+}
+
+@media (max-width: 991.98px) {
+    .cascading-right {
+        margin-right: 0;
+    }
 }
