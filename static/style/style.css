@@ -1,0 +1,4 @@
+.card-body {
+    opacity: 100%;
+    z-index: 9999; /* Insira o valor que desejar */
+}
