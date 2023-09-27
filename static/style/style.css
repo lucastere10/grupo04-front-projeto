@@ -225,6 +225,11 @@ footer{
 
 }
 
+.vencedor { /* quem vencer vai ter essa borda */
+    border-radius: 15px; 
+    border: .5rem solid green;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 576px) {
