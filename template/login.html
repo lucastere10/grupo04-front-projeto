@@ -15,7 +15,6 @@
 </head>
 
 <body>
-    <header></header>
     <main>
         <!-- Section: Design Block -->
         <section class="login-section text-center text-lg-start">
@@ -24,7 +23,7 @@
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <div class="card cascading-right" style="
-                            background: hsla(0, 0%, 100%, 0.55);
+                            background: hsla(248, 31%, 15%, 0.55);
                             backdrop-filter: blur(30px);
                             ">
                             <div class="card-body p-5 shadow-5 text-center">
@@ -49,9 +48,15 @@
                                     </div>
 
                                     <!-- Submit button -->
-                                    <button type="submit" class="btn btn-primary btn-block mb-4">
-                                        Login
-                                    </button>
+                                    <div class="botaoLog"> 
+                                        <audio id="som" src="/static/style/sons/i-am-groot-13.mp3"></audio> 
+                                        <a href="/static/scripts/botoes.js">
+                                            <button id="btn" class="btnLog">           
+                                                Entrar    
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <script src="/static/scripts/botoes.js"></script>
                                      <!-- Registrar buttons -->
                                     <div class="text-center">
                                         <p>Não tem uma conta? 
@@ -64,20 +69,19 @@
                     </div>
 
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg"
+                        <img src="/static/style/imagens/groot.gif"
                             class="w-100 rounded-4 shadow-4 d-none d-lg-block" alt="" />
                     </div>                    
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
 
 
 
 
     <!-- SCRIPTS DE LOGIN -->
-    <script src="/static/scripts/login.js" ></script>
+    <script src="/static/scripts/botoes.js" ></script>
 
     <!-- SCRIPTS BOOTSTRAP 4 -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
