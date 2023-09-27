@@ -17,6 +17,8 @@
     <header>
         <div class="navbar">
             <div class="navbar-logo">
+                <img src="/static/style/imagens/dclogo.svg" alt="dc da logo">
+                <h1>Justice League</h1>
             </div>
             <div class="navbar-pesquisa">
                 <form onsubmit="" class="form-pesquisa">
@@ -32,44 +34,78 @@
             </div>
         </div>
     </header>
-
+    
     <body>
         <div class="heroi-card">
             <div class="div-heroi-img">
                 <img class="heroi-img" src="" alt="">
             </div>
             <div class="heroi-info">
-                <h3 class="heroi-nome"></h3>
-                <h5 class="heroi-nome-real"></h5>
+                <div class="infosuperior">
+                    <h3 class="heroi-nome"></h3>
+                    <h5 class="heroi-nome-real"></h5>
+                </div>
+                
                 <div class="div-powerstats">
+
                     <h3>PowerStats</h3>
-                    <div class="powerstats-card">
-                        <div class="card-poder">
+                    <ul class="powerstats-card">
+                        <li class="itens-status card-poder">
+                            <img class="" src="/static/style/imagens/biceps-svgrepo-com.svg" alt="biceps">
+                            <p class="label-status">Poder:</p>
                             <p class="poder-valor"></p>
-                        </div>
-                        <div class="card-velocidade">
+                        </li>
+                        <li class="itens-status card-velocidade">
+                            <img class="filtro" src="/static/style/imagens/person-running-solid.svg" alt="running">
+                            <p class="label-status">Velocidade:</p>
                             <p class="velocidade-valor"></p>
-                        </div>
-                        <div class="card-combate">
+                        </li>
+                        <li class="itens-status card-combate">
+                            <img class="filtro" src="/static/style/imagens/hand-fist-solid.svg" alt="first">
+                            <p class="label-status">Combate:</p>
                             <p class="combate-valor"></p>
-                        </div>
-                        <div class="card-inteligencia">
+                        </li>
+                        <li class="itens-status card-inteligencia">
+                            <img class="filtro" src="/static/style/imagens/brain-solid.svg" alt="brain">
+                            <p class="label-status">Inteligencia:</p>
                             <p class="inteligencia-valor"></p>
-                        </div>
-                        <div class="card-forca">
+                        </li>
+                        <li class="itens-status card-forca">
+                            <img class="filtro" src="/static/style/imagens/dumbbell-solid.svg" alt="dumbbell">
+                            <p class="label-status">Força:</p>
                             <p class="forca-valor"></p>
-                        </div>
-                        <div class="card-durabilidade">
+                        </li>
+                        <li class="itens-status card-durabilidade">
+                            <img class="filtro" src="/static/style/imagens/shield-halved-solid.svg" alt="Shield">
+                            <p class="label-status">Durabilidade:</p>
                             <p class="durabilidade-valor"></p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     </body>
 
-    <footer></footer>
+    <footer>
+        <div class="footerlogo">
+            <img src="/static/style/imagens/dclogo.svg" alt="dc logo">
+            <h3><a href="https://www.dc.com/">Site Oficial</a></h3>
+        </div>
+        <ol class="nomes">
+            <li>Alexander</li>
+            <li>Andre</li>
+            <li>Lucas</li>
+            <li>Victor</li>
+            <li>Manoel</li>
+            <li>Bryan</li>
+            <li>Douglas Maia</li>
+        </ol>
+        
+        
+        
+        
+    </footer>
 
     <script src="/static/scripts/script.js" ></script>
     <script src="/static/scripts/auth.js" ></script>
