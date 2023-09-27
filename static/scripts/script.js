@@ -21,7 +21,7 @@ function chamarQuery(int) {
        .then(response => response.json()) // parse JSON
        .then(data => {
            console.log(data)
-           document.querySelector(`.heroi-img${int}`).src = data.image.url;
+                      document.querySelector(`.heroi-img${int}`).src = data.image.url;
            document.querySelector(`.heroi-nome${int}`).textContent = data.name;
            document.querySelector(`.heroi-nome-real${int}`).textContent = data.biography[`full-name`]; //nao da pra passar por conta do "-"
            //document.querySelector(`.hero-primeira-aparicao`).textContent = data.biography[`first-appearance`]
@@ -36,8 +36,10 @@ function chamarQuery(int) {
        .catch(error => console.error(`Error:`, error));
 };
 
-
-
+window.onload = function() {
+    chamarQuery(1);
+    chamarQuery(2);
+};
 
 //pegar informações do personagem
 //definir arquivo

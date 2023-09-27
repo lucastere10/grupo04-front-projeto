@@ -5,6 +5,16 @@ function registrarUsuario(){
     var email = document.getElementById("email-input").value;
     var senha = document.getElementById("senha-input").value;
 
+    // Check if email already exists
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var existingUser = JSON.parse(localStorage.getItem(key));
+        if (existingUser.email === email) {
+            alert("Email já existente!");
+            return;
+        }
+    }
+
     //criar classe usuario com valores recebitos
     var classeUsuario = {
         usuario:usuario,
