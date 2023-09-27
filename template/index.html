@@ -20,7 +20,7 @@
                 <img src="/static/style/imagens/dclogo.svg" alt="dc da logo">
                 <h1>Justice League</h1>
             </div>
-            <div class="navbar-pesquisa">
+            <!-- <div class="navbar-pesquisa">
                 <form onsubmit="" class="form-pesquisa">
                     <input type="text" class="form-input" placeholder="Escolha seu super herói ..." name = "pesquisa">
                     <button type="submit" class = "btn-pesquisar">
@@ -31,60 +31,135 @@
                         <p></p>
                     </div>
                 </form>
-            </div>
+            </div> -->
         </div>
     </header>
     
     <body>
-        <div class="heroi-card">
-            <div class="div-heroi-img">
-                <img class="heroi-img" src="" alt="">
-            </div>
-            <div class="heroi-info">
-                <div class="infosuperior">
-                    <h3 class="heroi-nome"></h3>
-                    <h5 class="heroi-nome-real"></h5>
+        <div class="div-cards d-flex flex-wrap p-4">
+            <div class="heroi-card row">
+                <div class="div-heroi-img col-6">
+                    <img class="heroi-img" src="" alt="">
                 </div>
-                
-                <div class="div-powerstats">
-
-                    <h3>PowerStats</h3>
-                    <ul class="powerstats-card">
-                        <li class="itens-status card-poder">
-                            <img class="" src="/static/style/imagens/biceps-svgrepo-com.svg" alt="biceps">
-                            <p class="label-status">Poder:</p>
-                            <p class="poder-valor"></p>
-                        </li>
-                        <li class="itens-status card-velocidade">
-                            <img class="filtro" src="/static/style/imagens/person-running-solid.svg" alt="running">
-                            <p class="label-status">Velocidade:</p>
-                            <p class="velocidade-valor"></p>
-                        </li>
-                        <li class="itens-status card-combate">
-                            <img class="filtro" src="/static/style/imagens/hand-fist-solid.svg" alt="first">
-                            <p class="label-status">Combate:</p>
-                            <p class="combate-valor"></p>
-                        </li>
-                        <li class="itens-status card-inteligencia">
-                            <img class="filtro" src="/static/style/imagens/brain-solid.svg" alt="brain">
-                            <p class="label-status">Inteligencia:</p>
-                            <p class="inteligencia-valor"></p>
-                        </li>
-                        <li class="itens-status card-forca">
-                            <img class="filtro" src="/static/style/imagens/dumbbell-solid.svg" alt="dumbbell">
-                            <p class="label-status">Força:</p>
-                            <p class="forca-valor"></p>
-                        </li>
-                        <li class="itens-status card-durabilidade">
-                            <img class="filtro" src="/static/style/imagens/shield-halved-solid.svg" alt="Shield">
-                            <p class="label-status">Durabilidade:</p>
-                            <p class="durabilidade-valor"></p>
-                        </li>
-                    </ul>
+                <div class="heroi-info col-6">
+                    <div class="heroi-input">
+                        <form onsubmit="" class="heroi-pesquisa heroi1-pesquisa row">
+                            <input type="text" class="form-input col-8" placeholder="Escolha seu super herói ..." name = "pesquisa1">
+                            <button type="submit" class = "btn-pesquisar col-3">
+                                Submit
+                            </button>
+                            <div class="lista-pesquisa" id = "lista-pesquisa">
+                                <img src="" alt="">
+                                <p></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="infosuperior">
+                        <h3 class="heroi-nome"></h3>
+                        <h5 class="heroi-nome-real"></h5>
+                    </div>
+                    
+                    <div class="div-powerstats p-2">
+                        <h3 class="powerstats-titulo">PowerStats</h3>
+                        <ul class="powerstats-card mt-4 ml-4">
+                            <li class="itens-status card-poder">
+                                <img class="" src="/static/style/imagens/biceps-svgrepo-com.svg" alt="biceps">
+                                <p class="label-status">Poder:</p>
+                                <p class="poder-valor"></p>
+                            </li>
+                            <li class="itens-status card-velocidade">
+                                <img class="filtro" src="/static/style/imagens/person-running-solid.svg" alt="running">
+                                <p class="label-status">Velocidade:</p>
+                                <p class="velocidade-valor"></p>
+                            </li>
+                            <li class="itens-status card-combate">
+                                <img class="filtro" src="/static/style/imagens/hand-fist-solid.svg" alt="first">
+                                <p class="label-status">Combate:</p>
+                                <p class="combate-valor"></p>
+                            </li>
+                            <li class="itens-status card-inteligencia">
+                                <img class="filtro" src="/static/style/imagens/brain-solid.svg" alt="brain">
+                                <p class="label-status">Inteligencia:</p>
+                                <p class="inteligencia-valor"></p>
+                            </li>
+                            <li class="itens-status card-forca">
+                                <img class="filtro" src="/static/style/imagens/dumbbell-solid.svg" alt="dumbbell">
+                                <p class="label-status">Força:</p>
+                                <p class="forca-valor"></p>
+                            </li>
+                            <li class="itens-status card-durabilidade">
+                                <img class="filtro" src="/static/style/imagens/shield-halved-solid.svg" alt="Shield">
+                                <p class="label-status">Durabilidade:</p>
+                                <p class="durabilidade-valor"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="https://wimg.588ku.com/gif/21/06/08/a7d03d09011504e7b454f5d35ec4f05b.gif?imageView2/1/w/150" alt="" class=""> -->
+            <!-- <img src="https://media.tenor.com/GzuO85SsJgkAAAAC/vexsigon-vex.gif" alt="" class=""> -->
+            <!-- <img src="https://media.tenor.com/0vyb2x9bHzMAAAAC/v-letter-gif.gif" alt="" class=""> -->
+            <h2 class="versus">VS</h2>
+            <div class="heroi-card row">
+                <div class="div-heroi-img col-6">
+                    <img class="heroi-img" src="" alt="">
+                </div>
+                <div class="heroi-info col-6">
+                    <div class="heroi-input">
+                        <form onsubmit="" class="heroi1-pesquisa">
+                            <input type="text" class="form-input" placeholder="Escolha seu super herói ..." name = "pesquisa1">
+                            <button type="submit" class = "btn-pesquisar">
+                                Submit
+                            </button>
+                            <div class="lista-pesquisa" id = "lista-pesquisa">
+                                <img src="" alt="">
+                                <p></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="infosuperior">
+                        <h3 class="heroi-nome"></h3>
+                        <h5 class="heroi-nome-real"></h5>
+                    </div>
+                    
+                    <div class="div-powerstats">
+                        <h3>PowerStats</h3>
+                        <ul class="powerstats-card">
+                            <li class="itens-status card-poder">
+                                <img class="" src="/static/style/imagens/biceps-svgrepo-com.svg" alt="biceps">
+                                <p class="label-status">Poder:</p>
+                                <p class="poder-valor"></p>
+                            </li>
+                            <li class="itens-status card-velocidade">
+                                <img class="filtro" src="/static/style/imagens/person-running-solid.svg" alt="running">
+                                <p class="label-status">Velocidade:</p>
+                                <p class="velocidade-valor"></p>
+                            </li>
+                            <li class="itens-status card-combate">
+                                <img class="filtro" src="/static/style/imagens/hand-fist-solid.svg" alt="first">
+                                <p class="label-status">Combate:</p>
+                                <p class="combate-valor"></p>
+                            </li>
+                            <li class="itens-status card-inteligencia">
+                                <img class="filtro" src="/static/style/imagens/brain-solid.svg" alt="brain">
+                                <p class="label-status">Inteligencia:</p>
+                                <p class="inteligencia-valor"></p>
+                            </li>
+                            <li class="itens-status card-forca">
+                                <img class="filtro" src="/static/style/imagens/dumbbell-solid.svg" alt="dumbbell">
+                                <p class="label-status">Força:</p>
+                                <p class="forca-valor"></p>
+                            </li>
+                            <li class="itens-status card-durabilidade">
+                                <img class="filtro" src="/static/style/imagens/shield-halved-solid.svg" alt="Shield">
+                                <p class="label-status">Durabilidade:</p>
+                                <p class="durabilidade-valor"></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </body>
 
     <footer>
@@ -100,14 +175,18 @@
             <li>Manoel</li>
             <li>Bryan</li>
             <li>Douglas Maia</li>
-        </ol>
-        
-        
-        
-        
+        </ol>    
     </footer>
 
+    <!-- SCRIPTS DE API & AUTH -->
     <script src="/static/scripts/script.js" ></script>
     <script src="/static/scripts/auth.js" ></script>
+
+    <!-- SCRIPTS BOOTSTRAP 4 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- SCRIPTS BOOTSTRAP 4 -->
+
 </body>
 </html>

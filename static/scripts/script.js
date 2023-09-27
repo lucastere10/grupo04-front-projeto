@@ -2,9 +2,9 @@ var api = '6407347946043276'
 
 //pegar informações do personagem
 //definir arquivo
-document.querySelector('.form-pesquisa').addEventListener('submit', function(event) {
+document.querySelector('.heroi1-pesquisa').addEventListener('submit', function(event) {
    event.preventDefault(); // nao limpar console log
-   var id = document.querySelector('input[name="pesquisa"]').value; // pegar o id do input
+   var id = document.querySelector('input[name="pesquisa1"]').value; // pegar o id do input
    fetch(`https://www.superheroapi.com/api.php/${api}/${id}/`) // requisitar dados da api
        .then(response => response.json()) // parse JSON
        .then(data => {

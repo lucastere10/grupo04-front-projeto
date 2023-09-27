@@ -49,9 +49,19 @@ html, body {
     height: 46px;
     flex-shrink: 0;
 }
+
+.div-cards{
+    gap: 5rem;
+}
+
+.versus{
+    font-size: 5rem;
+    align-self: center;
+    color: aliceblue;
+}
+
 .form-input{
     display: flex;
-    width: 295px;
     height: 45px;
     padding: 10px 24px;
     justify-content: center;
@@ -68,7 +78,6 @@ html, body {
     
 }
 .heroi-card {
-    width: 50%;
     height: auto;
     flex-shrink: 0;
     border-radius: 12px;
@@ -76,33 +85,39 @@ html, body {
     display: flex;
     padding: 1rem;
     gap: 1rem;
-    color: #FFF;
-
-    
+    color: #FFF;   
 }
-.div-heroi-img{
+
+.heroi-nome{
+    color: #FCA311;
+}
+
+/* .div-heroi-img{
     width: 100%;
     max-width:394px;
     min-width: 200px;
     height: 100%;
     overflow: hidden;
     flex: 2;
-}
+} */
+
 .heroi-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
-    
 }
+
+.heroi-pesquisa{
+    gap: .5rem;
+}
+
 .heroi-info{
     flex: 2;
 }
+
 .itens-status{
     display: flex;
     gap: 0.5rem;
-    
-    
 
 }
 .itens-status img{
@@ -115,16 +130,35 @@ html, body {
 }
 .infosuperior{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: baseline;
-    justify-content: center;
-    margin: 60px 0px;
+    justify-content: start;
+    margin: 20px 0px 5px 0;
     font-size: 20rem;
 
 }
 .infosuperior h3{
-    font-size: 3rem ;
+    font-size: 3rem;
 }
+
+.infosuperior h5{
+    color: #828282;
+}
+
+.div-powerstats{
+    background-color: #080809;
+}
+
+.powerstats-titulo{
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.itens-status{
+    margin: .5rem;
+}
+
+
 footer img{
     width: 90px;
     height: 90px;   
