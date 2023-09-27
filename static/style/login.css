@@ -1,0 +1,10 @@
+.card {
+    position: relative;
+    z-index: 9999; /* Adjust this value as necessary */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

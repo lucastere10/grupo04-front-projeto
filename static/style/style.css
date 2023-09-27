@@ -1,11 +1,25 @@
 html, body {
     font-family: "Poppins", sans-serif;
-
   }
 
-.card {
-    opacity: 100%;
-    z-index: 1; /* Insira o valor que desejar */
+header{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A0A0A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .cascading-right {
@@ -26,10 +40,12 @@ html, body {
 }
 .navbar{
     height: 64px;
+    width: 100%;
     display: flex;
     align-content: center;
     background: linear-gradient(180deg, rgba(38, 34, 202, 0.71) 39.06%, rgba(14, 15, 15, 0.66) 69.27%, rgba(0, 0, 0, 0.66) 100%);
 }
+
 .navbar-logo{
     display: flex;
     gap: 1rem;
@@ -51,7 +67,13 @@ html, body {
 }
 
 .div-cards{
-    gap: 5rem;
+    gap: 2rem;
+}
+
+.versus-gif{
+    width: 150px;
+    height: 150px;
+    align-self: center;
 }
 
 .versus{
@@ -79,7 +101,7 @@ html, body {
 }
 .heroi-card {
     height: auto;
-    flex-shrink: 0;
+    max-width: 800px;
     border-radius: 12px;
     background: #060606;
     display: flex;
@@ -128,6 +150,7 @@ html, body {
 .filtro{
     filter: invert(27%) sepia(99%) saturate(2485%) hue-rotate(234deg) brightness(99%) contrast(98%);
 }
+
 .infosuperior{
     display: flex;
     gap: 1rem;
@@ -149,27 +172,41 @@ html, body {
     background-color: #080809;
 }
 
-.powerstats-titulo{
+.powerstats-titulo {
+    text-align: center;
     align-items: center;
     margin: 1rem 0;
+}
+
+/* ul.powerstats-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 0;
+} */
+
+.itens-status {
+    display: grid;
+    grid-template-columns: 6fr 48fr 1fr;
+    gap: 0.1px;
 }
 
 .itens-status{
     margin: .5rem;
 }
 
-
 footer img{
     width: 90px;
     height: 90px;   
 }
+
 footer{
     width: 100%;
     height: 200px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 39.06%, rgba(14, 15, 15, 0.66) 69.27%, rgba(27, 13, 227, 0.66) 100%);
     margin-top: auto;
-
 }
+
 .footerlogo{
      display: flex; 
     justify-content: center;
@@ -181,26 +218,16 @@ footer{
 }
 .nomes{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     color: #FFF;
-    gap: 3rem;
+    gap: 1rem;
     margin-top: 3rem;
 
 }
 
-
-body{
-    background-color: #0A0A0A;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-
-
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
     .cascading-right {
         margin-right: 0;
     }
-}
+} */
