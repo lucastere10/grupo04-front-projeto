@@ -14,8 +14,8 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <header></header>
     <main>
+        
         <!-- Section: Design Block -->
         <section class="login-section text-center text-lg-start">       
             <!-- Jumbotron -->
@@ -23,8 +23,8 @@
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <div class="card cascading-right" style="
-                            background: hsla(0, 0%, 100%, 0.55);
-                            backdrop-filter: blur(30px);
+                            background: hsla(248, 31%, 15%, 0.55);
+                            backdrop-filter: blur(30px);                           
                             ">
                             <div class="card-body p-5 shadow-5 text-center">
                                 <h2 class="fw-bold mb-5"><strong>Cadastrar</strong></h2>
@@ -51,17 +51,25 @@
                                         <label class="form-label" for="senha-input">Senha</label>
                                     </div>
                
-                                    <!-- SCRIPT É ACIONADO AO DAR SUBMIT NO BOTÃO -->
-                                    <button type="submit" class="btn btn-primary btn-block mb-4">
-                                        Cadastrar
-                                    </button>
+                                    <!-- SCRIPT É ACIONADO AO DAR SUBMIT NO BOTÃO, PASSANDO O MOUSE TOCA O AUDIO E O BOTAO MUDA -->
+                                    <div class="botaoCad"> 
+                                        <audio id="som" src="/static/style/sons/Efeito_Batman.mp3"></audio> 
+                                        <a href="/static/scripts/botoes.js">
+                                            <button id="btn" class="btnCad">           
+                                                Cadastrar    
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <script src="/static/scripts/botoes.js">
+                                    
+                                    </script>
                                 </form>
                             </div>
                         </div>
                     </div>
         
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg"
+                        <img src="/static/style/imagens/batrobgif.gif"
                             class="w-100 rounded-4 shadow-4 d-none d-lg-block" alt="" />
                     </div>                    
                 </div>
@@ -70,7 +78,6 @@
         </section>
         <!-- Section: Design Block -->
         </main>
-        <footer></footer>
 
 
         <!-- SCRIPTS DE LOGIN -->
