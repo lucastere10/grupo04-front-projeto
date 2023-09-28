@@ -1,11 +1,12 @@
 // Função para registrar um novo usuario e gravar no local storage
 function registrarUsuario(){
     event.preventDefault();
+    //puxar variáveis dos inputs da página
     var usuario = document.getElementById("usuario-input").value;
     var email = document.getElementById("email-input").value;
     var senha = document.getElementById("senha-input").value;
 
-    // Check if email already exists
+    // verificar se o email ja foi utilizado para outro cadastro
     for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
         var existingUser = JSON.parse(localStorage.getItem(key));
@@ -15,20 +16,21 @@ function registrarUsuario(){
         }
     }
 
-    //criar classe usuario com valores recebitos
+    // criar classe usuario com valores recebitos
+    // criar classUsuario
     var classeUsuario = {
         usuario:usuario,
         email:email,
         senha:senha
     }
 
-    //transformar classe usuario para o formato json
+    // transformar classe usuario para o formato json
     var json = JSON.stringify(classeUsuario);
-    //armazenar valores no local storage
+    // armazenar valores no local storage
     localStorage.setItem(usuario, json);
 
     alert("Usuário cadastrado com sucesso!");
-    console.log(usuario);
+    console.log(usuario); // verificar se ta funcionando legal
     
     //deu tudo certo! voltar para o login!
     window.location.href = "login.html"
@@ -55,12 +57,13 @@ function logarUsuario(){
         return;
     }
 
-    console.log(data);
+    console.log(data); // verificar se a data foi corretamente
 
-    //verificar a senha e o usuario
+    // verificar a senha e o usuario
     // caso verdadeiro levar para a paginha index
     if (usuario == data.usuario && senha == data.senha) {
         alert('Login realizado com Sucesso!');
+        // o código abaixo armazena a autenticação na sessão atual
         sessionStorage.setItem("AuthenticationState", "Authenticated");
         window.location.href = "index.html"
     } else {
