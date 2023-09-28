@@ -4,7 +4,7 @@ html, body {
 
 
 body{
-    background-image: url(/static/style/imagens/backhqs.jpg);  
+    background-image: url(imagens/backhqs.jpg);  
 }
 main{
     margin-top: 180px;
