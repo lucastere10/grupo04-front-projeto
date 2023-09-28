@@ -15,6 +15,7 @@
 <body>
 
     <header>
+        <!-- Navbar com logo e titulo -->
         <div class="navbar justify-content-md-start">
             <div class="navbar-logo">
                 <img src="/static/style/imagens/super_trunfo.png" alt="dc da logo">
@@ -24,13 +25,16 @@
     </header>
     
     <main>
-        <div class="div-cards d-flex flex-wrap justify-content-center align-items-center p-4">
+        <!-- DIV PRINCIPAL DOS CARDS -->
+        <div class="div-cards d-flex flex-wrap justify-content-center align-items-center p-0 p-sm-4">
+            <!-- PRIMEIRO CARD DE HEROI -->
             <div class="heroi-card heroi1-card row">
                 <div class="div-heroi-img col-md-5">
                     <img class="heroi-img heroi-img1" src="" alt="">
                 </div>
                 <div class="heroi-info col-md-7">
                     <div class="heroi-input">
+                        <!-- FORM PARA FAZER OS INPUTS -->
                         <form onsubmit="" class="heroi-pesquisa heroi1-pesquisa">
                             <input type="text" class="form-input" placeholder="Escolha seu super herói ..." value="70" name = "pesquisa1">
                             <button type="submit" class = "btn-pesquisar">
@@ -43,6 +47,7 @@
                         <h5 class="heroi-nome-real heroi-nome-real1"></h5>
                     </div>
                     
+                    <!-- DIV DOS POWERSTATS COM OS VALORES -->
                     <div class="div-powerstats p-2">
                         <h3 class="powerstats-titulo">PowerStats</h3>
                         <ul class="powerstats-card p-4">
@@ -80,10 +85,12 @@
                     </div>
                 </div>
             </div>
+            <!-- GIF VERSUS -->
             <div class="div-versus-gif" style="height: 200px;">
                 <img class="versus-gif" src="/static/style/imagens/giphy.gif" alt="">
             </div>
             <!-- <h2 class="versus">VS</h2> -->
+            <!-- SEGUNDO CARD DO HEROI -->
             <div class="heroi-card heroi2-card row">
                 <div class="div-heroi-img col-md-5">
                     <img class="heroi-img heroi-img2" src="" alt="">
@@ -104,7 +111,7 @@
                     
                     <div class="div-powerstats p-2">
                         <h3 class="powerstats-titulo">PowerStats</h3>
-                        <ul class="powerstats-card mt-4 ml-4">
+                        <ul class="powerstats-card p-4">
                             <li class="itens-status card-poder">
                                 <img class="" src="/static/style/imagens/biceps-svgrepo-com.svg" alt="biceps">
                                 <p class="label-status">Poder:</p>
@@ -140,52 +147,67 @@
                 </div>
             </div>
         </div>
+
     </main>
 
+
     <footer>
+        <!-- DIV COM OS HEROIS PRE DETERMINADOS -->
+        <div class="div-toogle d-flex mt-4 align-items-center justify-content-center">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn player-1 btn-primary active btn-lg">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> player-1
+                </label>
+                <label class="btn player-2 btn-danger btn-lg">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> player-2
+                </label>
+            </div>
+        </div>        
+    
+        <!-- FOOTER COM OS CREDITOS DOS PARTICIPANTES -->
         <div class="footerlogo d-flex flex-wrap mt-4 p-3">
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(136)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/brainiac-svgrepo-com.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(149)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/captain-america-adamantium-shield-svgrepo-com.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(346)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/icons8-avengers.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(309)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/icons8-harley-quinn-dc.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(620)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/spiderman-svgrepo-com.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(265)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/icons8-the-flash-sign.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(213)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/deadpool.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(720)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/icons8-wonder-woman.svg" alt="dc logo">    
                 </a>
             </div>
             <div class="div-footer-logo-img">
-                <a href="" class="footerlogo-anchor">
+                <a href="#" onclick=" chamarQueryPlayerSelecionado(70)" class="footerlogo-anchor">
                     <img class = "filtro-logos" src="/static/style/imagens/batman-svgrepo-com.svg" alt="dc logo">    
                 </a>
             </div>
