@@ -27,13 +27,13 @@
                             backdrop-filter: blur(30px);                           
                             ">
                             <div class="card-body p-5 shadow-5 text-center">
-                                <h2 class="fw-bold mb-5"><strong>Cadastrar</strong></h2>
+                                <h2 class="card-titulo fw-bold mb-5 mt-3">Entre para a <strong>LEGIÃO</strong></h2>
                                 <form onsubmit="registrarUsuario()">
                                     <!-- Usuario input -->
                                     <div class="row">
                                         <div class="col-md-12 mb-4">
                                             <div class="form-outline">
-                                                <input type="text" id="usuario-input" class="form-control" required />
+                                                <input type="text" id="usuario-input" class="form-control" pattern="[A-Za-z0-9]{6,}" required />
                                                 <label for="usuario-input">Usuário</label>
                                             </div>
                                         </div>
@@ -47,7 +47,9 @@
         
                                     <!-- Senha input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="senha-input" class="form-control" required />
+                                        <!-- <input type="text" id="senha-input" class="form-control" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" required /> -->
+                                        <!-- <label for="pwd">Password:</label> -->
+                                        <input type="text" id="senha-input" class="form-control" name="pwd" pattern="[A-Za-z0-9]{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
                                         <label class="form-label" for="senha-input">Senha</label>
                                     </div>
                

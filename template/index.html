@@ -9,39 +9,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style/style.css">  <!-- PERSONALIZAÇÃO STYLE.CSS -->
     <!-- Modificar FavCon -->
-    <link rel="icon" type="image/x-icon" href="/static/style/imagens/dclogo.svg">
-    <title>MundoMARVEL</title>
+    <link rel="icon" type="image/x-icon" href="/static/style/imagens/super_trunfo.png">
+    <title>LegiaoSERRANA</title>
 </head>
 <body>
 
     <header>
-        <div class="navbar">
+        <div class="navbar justify-content-md-start">
             <div class="navbar-logo">
-                <img src="/static/style/imagens/dclogo.svg" alt="dc da logo">
-                <h1>Justice League</h1>
+                <img src="/static/style/imagens/super_trunfo.png" alt="dc da logo">
+                <h1>Legiao<strong>SERRANA</strong></h1>
             </div>
-            <!-- <div class="navbar-pesquisa">
-                <form onsubmit="" class="form-pesquisa">
-                    <input type="text" class="form-input" placeholder="Escolha seu super herói ..." name = "pesquisa">
-                    <button type="submit" class = "btn-pesquisar">
-                        Submit
-                    </button>
-                    <div class="lista-pesquisa" id = "lista-pesquisa">
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </form>
-            </div> -->
         </div>
     </header>
     
     <main>
-        <div class="div-cards d-flex flex-wrap p-4">
+        <div class="div-cards d-flex flex-wrap justify-content-center align-items-center p-4">
             <div class="heroi-card heroi1-card row">
-                <div class="div-heroi-img col-sm-5">
+                <div class="div-heroi-img col-md-5">
                     <img class="heroi-img heroi-img1" src="" alt="">
                 </div>
-                <div class="heroi-info col-sm-7">
+                <div class="heroi-info col-md-7">
                     <div class="heroi-input">
                         <form onsubmit="" class="heroi-pesquisa heroi1-pesquisa">
                             <input type="text" class="form-input" placeholder="Escolha seu super herói ..." value="70" name = "pesquisa1">
@@ -50,7 +38,7 @@
                             </button>
                         </form>
                     </div>
-                    <div class="infosuperior">
+                    <div class="infosuperior d-flex flex-wrap">
                         <h3 class="heroi-nome heroi-nome1"></h3>
                         <h5 class="heroi-nome-real heroi-nome-real1"></h5>
                     </div>
@@ -92,13 +80,15 @@
                     </div>
                 </div>
             </div>
-            <img class="versus-gif" src="/static/style/imagens/giphy.gif" alt="">
+            <div class="div-versus-gif" style="height: 200px;">
+                <img class="versus-gif" src="/static/style/imagens/giphy.gif" alt="">
+            </div>
             <!-- <h2 class="versus">VS</h2> -->
             <div class="heroi-card heroi2-card row">
-                <div class="div-heroi-img col-sm-5">
+                <div class="div-heroi-img col-md-5">
                     <img class="heroi-img heroi-img2" src="" alt="">
                 </div>
-                <div class="heroi-info col-sm-7">
+                <div class="heroi-info col-md-7">
                     <div class="heroi-input">
                         <form onsubmit="" class="heroi-pesquisa heroi2-pesquisa">
                             <input type="text" class="form-input" placeholder="Escolha seu super herói ..." value="10" name = "pesquisa2">
@@ -107,7 +97,7 @@
                             </button>
                         </form>
                     </div>
-                    <div class="infosuperior">
+                    <div class="infosuperior d-flex flex-wrap">
                         <h3 class="heroi-nome heroi-nome2"></h3>
                         <h5 class="heroi-nome-real heroi-nome-real2"></h5>
                     </div>
@@ -153,11 +143,54 @@
     </main>
 
     <footer>
-        <div class="footerlogo">
-            <img src="/static/style/imagens/dclogo.svg" alt="dc logo">
-            <h3><a href="https://www.dc.com/">Site Oficial</a></h3>
+        <div class="footerlogo d-flex flex-wrap mt-4 p-3">
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/brainiac-svgrepo-com.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/captain-america-adamantium-shield-svgrepo-com.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/icons8-avengers.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/icons8-harley-quinn-dc.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/spiderman-svgrepo-com.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/icons8-the-flash-sign.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/deadpool.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/icons8-wonder-woman.svg" alt="dc logo">    
+                </a>
+            </div>
+            <div class="div-footer-logo-img">
+                <a href="" class="footerlogo-anchor">
+                    <img class = "filtro-logos" src="/static/style/imagens/batman-svgrepo-com.svg" alt="dc logo">    
+                </a>
+            </div>
         </div>
-        <ol class="nomes">
+        <ol class="nomes p-3">
             <li>Alexander</li>
             <li>Andre</li>
             <li>Lucas</li>

@@ -39,10 +39,11 @@ main {
     height: 100vh; /* Altura total da viewport */
 }
 .navbar{
-    height: 64px;
+    height: 6rem;
     width: 100%;
     display: flex;
     align-content: center;
+    justify-content: center;
     background: linear-gradient(180deg, #1E2639 0%, #0A0A0A 100%);
 }
 
@@ -50,20 +51,25 @@ main {
     display: flex;
     gap: 1rem;
     color: #FFF;
+    margin-left: 1rem;
     justify-content: center;
+    align-items: center;
 
 }
 .navbar-logo img {
-    width: 47px;
-    height: 47px;
+    width: 60px;
+    height: 60px;
     flex-shrink: 0;
 
 }
 .navbar-logo h1 {
-    
     width: 288px;
     height: 46px;
     flex-shrink: 0;
+}
+
+.navbar-logo h1 strong{
+    color: #FCA311;
 }
 
 .div-cards{
@@ -105,10 +111,11 @@ main {
 }
 
 .heroi-card {
-    height: auto;
-    max-width: 800px;
+    height: 7%;
+    max-width: 700px;
     border-radius: 12px;
     background: #060606;
+    margin: 0 1rem;
     display: flex;
     padding: 1rem;
     gap: 1rem;
@@ -150,11 +157,14 @@ main {
 }
 
 .filtro{
-    filter: invert(27%) sepia(99%) saturate(2485%) hue-rotate(234deg) brightness(99%) contrast(98%);
+    filter: invert(66%) sepia(78%) saturate(606%) hue-rotate(344deg) brightness(95%) contrast(109%);
+}
+
+.filtro-logos{
+    filter: invert(66%) sepia(78%) saturate(606%) hue-rotate(344deg) brightness(95%) contrast(109%);
 }
 
 .infosuperior{
-    display: flex;
     gap: 1rem;
     align-items: baseline;
     justify-content: start;
@@ -201,7 +211,7 @@ footer img{
 
 footer{
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background: linear-gradient(180deg, #0A0A0A 19.39%, #1E2639 100%);
     margin-top: auto;
 }
@@ -213,8 +223,8 @@ footer{
     gap: 2rem;
     padding-top: 1rem;
     color: #FFF;
-
 }
+
 .nomes{
     display: flex;
     flex-flow: row wrap;
@@ -230,9 +240,23 @@ footer{
     border: .5rem solid green;
 }
 
+.perdedor { /* quem vencer vai ter essa borda */
+    border-radius: 15px; 
+    border: .5rem solid red;
+}
+
+
 /* MEDIA QUERIES */
 
+@media (max-width: 1726px) {
+    .div-cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 576px) {
+
     .navbar-logo h1{
         display: none;
     }
@@ -280,6 +304,8 @@ footer{
         display: none;
     }
 
+
+
     ul.powerstats-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -287,7 +313,27 @@ footer{
         margin-bottom: 0;
         padding: .1rem;
     } 
-    
+
+    .itens-status{
+        gap: 1rem;
+        place-self: center;
+        align-self: center;
+        display: flex;
+    }
+
+    .itens-status p{
+        font-size: 1.5rem;
+    }
+    .itens-status img{
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .label-status{
+        display: none;
+    }
+
     .div-heroi-img {
         display: flex;
         justify-content: center;
@@ -296,6 +342,12 @@ footer{
     
     .div-heroi-img img {
         width: 50%;
+    }
+
+    .div-versus-gif{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
 }

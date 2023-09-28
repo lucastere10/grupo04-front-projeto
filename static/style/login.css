@@ -1,14 +1,26 @@
-body{
-    background-image: url(/static/style/imagens/backhqs.jpg);
+html, body {
+    font-family: "Poppins", sans-serif;
+  }
 
-      
+
+body{
+    background-image: url(/static/style/imagens/backhqs.jpg);  
 }
 main{
     margin-top: 180px;
     flex: auto;
 }
 
+.card-titulo{
+    font-size: 2rem;
+}
 
+.card-titulo strong{
+    font-size: 2.1rem;
+    font-weight: 700;
+    border: 2px #4D1518;
+    color: #C72523;
+}
 
 .card {
     position: relative;
@@ -19,12 +31,8 @@ main{
     justify-content: center;
     align-items: center;
     height: 100%;
-    
-    
-
-
-
 }
+
 .cascading-right {
     margin-right: -55px;
     color: azure;
