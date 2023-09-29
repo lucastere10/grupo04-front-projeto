@@ -6,6 +6,16 @@ function registrarUsuario(){
     var email = document.getElementById("email-input").value;
     var senha = document.getElementById("senha-input").value;
 
+    // verificar se o usuário ja foi utilizado para outro cadastro
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var existingUser = JSON.parse(localStorage.getItem(key));
+        if (existingUser.usuario === usuario) {
+            alert("Usuário já existente!");
+            return;
+        }
+    }
+
     // verificar se o email ja foi utilizado para outro cadastro
     for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
@@ -16,8 +26,9 @@ function registrarUsuario(){
         }
     }
 
-    // criar classe usuario com valores recebitos
-    // criar classUsuario
+    // criar objeto usuario com valores recebitos
+    // optamos por usar objeto ao inves de classe
+    // criar classeUsuario
     var classeUsuario = {
         usuario:usuario,
         email:email,

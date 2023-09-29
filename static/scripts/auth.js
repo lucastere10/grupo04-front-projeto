@@ -3,7 +3,7 @@
 //Verificar se o valor de 'AuthenticationState' é igual a null.
 //Se for tu vai de ralo O.o'
 if (sessionStorage.getItem('AuthenticationState') === null) {
-    alert("Access Denied");
+    alert("Acesso Negado!");
     window.location.href = "login.html"
 }
  else {
